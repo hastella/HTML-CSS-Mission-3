@@ -127,27 +127,28 @@ article h4 {
 .group {
   width: 124px;
   margin-top: 20px;
+  display: block;
+}
+.group div {
+  height: 26px;
+}
+.group div:not(:last-child) {
+  margin-bottom: 12px;
 }
 .group a {
-  display: block;
+  width: auto;
   padding: 6px 10px;
-  height: 26px;
-  background: var(--color-white);
-  border: 1px solid var(--color-gray-500);
-}
-.group a .hashtag {
   font-weight: 400;
   font-size: 12px;
   line-height: 120%;
+  border: 1px solid var(--color-gray-500);
+  background: var(--color-white);
 }
-#first .hashtag {
+#first .group a {
   color: var(--color-brown-300);
 }
-#second .hashtag {
+#second .group a {
   color: var(--color-green-700);
-}
-.group a:not(:last-child) {
-  margin-bottom: 12px;
 }
 .article-list {
   display: block;
@@ -178,6 +179,76 @@ article h4 {
   bottom: 350px;
   background: var(--color-gray-600);
 }
+aside {
+  width: 320px;
+  height: 631px;
+
+  margin-bottom: 1px;
+  overflow: hidden;
+}
+.carousel {
+  position: relative;
+}
+.carousel_indicator button:first-child {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 597px;
+  left: 144px;
+  background-color: var(--color-gray-700);
+  border: none;
+  z-index: 1;
+}
+
+.carousel_indicator button:nth-child(2) {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 597px;
+  right: 144px;
+  background-color: var(--color-gray-600);
+  border: none;
+  z-index: 1;
+}
+.carousel_list {
+  display: flex;
+}
+
+.carousel_list_item {
+  position: relative;
+}
+
+.aside_text {
+  position: absolute;
+  left: 30px;
+  top: 483px;
+  width: 260px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-brown-300);
+  color: var(--color-white);
+}
+
+.aside_text p:first-child {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 19px 0px 8px 0px;
+}
+
+.aside_text p:nth-child(2) {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 5px 0px 10px 0px;
+  width: 215px;
+  height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .article-list .product-card {
   width: 160px;
   height: 300px;
@@ -187,7 +258,7 @@ article h4 {
 .article-list .product-card:not(:last-child) {
   margin-right: 16px;
 }
-.article-list .name {
+.product-card .name {
   width: 152px;
   font-weight: 400;
   font-size: 14px;
@@ -195,19 +266,36 @@ article h4 {
   margin: 12px 0;
 }
 .article-list .price-type {
+  font-family: "Noto Sans";
   font-weight: 400;
   font-size: 14px;
   line-height: 120%;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
   color: var(--color-red-500);
 }
-.article-list .price {
+.price-box {
+  height: 27px;
+  display: flex;
+  align-items: center;
+  font-family: "Noto Sans";
+}
+.price-box .price {
   font-weight: 700;
   font-size: 18px;
   line-height: 120%;
+  margin-right: 4px;
 }
 .rocket-delivery {
   width: 54px;
   height: 14px;
   margin-left: 6px;
+}
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  padding: 0;
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
 }

@@ -32,233 +32,376 @@
         </div>
       </h2>
       <article id="first">
-        <div class="article-tit">
+        <nav class="article-tit">
           <h2>생활용품</h2>
-          <h4>바로가기</h4>
+          <a href="/"><h4>바로가기</h4></a>
           <h3>HOT키워드</h3>
           <div class="group">
-            <a href="/"><div class="hashtag">#바디오일</div></a>
-            <a href="/"><div class="hashtag">#액체세제</div></a>
-            <a href="/"><div class="hashtag">#화장실방향제</div></a>
-            <a href="/"><div class="hashtag">#엠보싱물티슈</div></a>
-            <a href="/"><div class="hashtag">#두피비듬샴푸</div></a>
-            <a href="/"><div class="hashtag">#뽑아쓰는키친타올</div></a>
+            <div><a href="/">#바디오일</a></div>
+            <div><a href="/">#액체세제</a></div>
+            <div><a href="/">#화장실방향제</a></div>
+            <div><a href="/">#엠보싱물티슈</a></div>
+            <div><a href="/">#두피비듬샴푸</a></div>
+            <div><a href="/">#뽑아쓰는키친타올</a></div>
           </div>
-        </div>
-        <div class="article-slide">
-          <div class="slides">
-            <div id="slide-1">
-              <img src="/assets/slides/houseware-downy.jpg" />
-              <div class="banner">
-                <div class="tit">최초의 99.9% 향균</div>
-                <div class="tit-sub">세균 냄새 걱정 없이 상쾌하게!</div>
+        </nav>
+        <aside>
+          <div
+            class="carousel"
+            role="region"
+            aria-roledescription="carousel"
+            aria-label="두개의 생활용품 배너"
+          >
+            <div class="carousel_indicator">
+              <button
+                type="button"
+                class="carousel__indicator active"
+                aria-label="첫번째 배너 보기"
+                aria-controls="housewareBanner"
+              ></button>
+              <button
+                type="button"
+                class="carousel__indicator"
+                aria-label="두번째 배너 보기"
+                aria-controls="housewareBanner"
+              ></button>
+            </div>
+
+            <div class="carousel_list" id="housewareBanner" aria-live="off">
+              <div
+                class="carousel_list_item active"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="첫번째 배너"
+              >
+                <a href="/">
+                  <img
+                    src="/assets/slides/houseware-downy.jpg"
+                    alt="다우니 세제"
+                  />
+                  <div class="aside_text">
+                    <p>최초의 99.9% 향균</p>
+                    <p>세균 냄새 걱정 없이 상쾌하게</p>
+                  </div>
+                </a>
               </div>
-              <div class="dots-wrapper">
-                <li><a class="dot" href="#slide-1"></a></li>
-                <li><a class="dot" href="#slide-2"></a></li>
+
+              <div
+                class="carousel_list_item"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="두번째 배너"
+              >
+                <a href="/">
+                  <img src="/assets/slides/houseware-dandruff.jpg" alt="샴푸" />
+                  <div class="aside_text">
+                    <p>NO 계면활성제</p>
+                    <p>비듬 각질 걱정 없이 상쾌하게</p>
+                  </div>
+                </a>
               </div>
             </div>
-            <div id="slide-2">
-              <img src="/assets/slides/houseware-dandruff.jpg" />
-            </div>
           </div>
-        </div>
+        </aside>
         <div class="article-list">
           <div class="top">
             <div class="product-card">
-              <img src="assets/category/houseware/houseware-basket.jpg" />
-              <div class="name">
-                왕타 칫솔 바스켓 앤 커버 10p+걸이 5p+바구니
-              </div>
-              <div class="price">12,900 원</div>
+              <a href="/">
+                <img
+                  src="assets/category/houseware/houseware-basket.jpg"
+                  alt="칫솔바구니"
+                />
+                <div class="name">
+                  왕타 칫솔 바스켓 앤 커버 10p+걸이 5p+바구니
+                </div>
+                <div class="price-box">
+                  <span class="sr-only">일반 판매가</span>
+                  <div class="price">12,900</div>
+                  <div>원</div>
+                </div>
+              </a>
             </div>
             <div class="product-card">
-              <img src="assets/category/houseware/houseware-hairoil.jpg" />
-              <div class="name">
-                로레알파리 엑스트라 오디네리 헤어오일 엑스트라 리치
-              </div>
-              <div class="price">
-                10,020 원
-                <img
-                  class="rocket-delivery"
-                  src="/assets/icon/badge-rocket.svg"
-                  alt="배송유형 로켓배송"
-                />
-              </div>
+              <a href="/">
+                <img src="assets/category/houseware/houseware-hairoil.jpg" />
+                <div class="name">
+                  로레알파리 엑스트라 오디네리 헤어오일 엑스트라 리치
+                </div>
+                <div class="price-box">
+                  <span class="sr-only">일반 판매가</span>
+                  <div class="price">10,020</div>
+                  <div>원</div>
+                  <img
+                    class="rocket-delivery"
+                    src="/assets/icon/badge-rocket.svg"
+                    alt="배송유형 로켓배송"
+                  />
+                </div>
+              </a>
             </div>
             <div class="product-card">
-              <img
-                src="assets/category/houseware/houseware-cleaningcloth.jpg"
-              />
-              <div class="name">
-                데일리워터 물걸레 청소포 대형리필 30매, 10팩
-              </div>
-              <div class="price-type">즉시할인가</div>
-              <div class="price">
-                15,410 원
+              <a href="/">
                 <img
-                  class="rocket-delivery"
-                  src="/assets/icon/badge-rocket.svg"
-                  alt="배송유형 로켓배송"
+                  src="assets/category/houseware/houseware-cleaningcloth.jpg"
                 />
-              </div>
+                <div class="name">
+                  데일리워터 물걸레 청소포 대형리필 30매, 10팩
+                </div>
+                <div class="price-type">즉시할인가</div>
+                <div class="price-box">
+                  <div class="price">15,410</div>
+                  <div>원</div>
+                  <span class="sr-only">배송유형 로켓배송</span>
+                  <img
+                    class="rocket-delivery"
+                    src="/assets/icon/badge-rocket.svg"
+                    alt="로켓배송"
+                  />
+                </div>
+              </a>
             </div>
           </div>
           <div class="bottom">
             <div class="product-card">
-              <img src="assets/category/houseware/houseware-massagestick.jpg" />
-              <div class="name">트로비스 핸드형 마사지 스택, 1개, 블루</div>
-              <div class="price-type">로켓와우회원가</div>
-              <div class="price">
-                5,740 원
+              <a href="/">
                 <img
-                  class="rocket-delivery"
-                  src="/assets/icon/badge-rocket.svg"
-                  alt="배송유형 로켓배송"
+                  src="assets/category/houseware/houseware-massagestick.jpg"
                 />
-              </div>
+                <div class="name">트로비스 핸드형 마사지 스택, 1개, 블루</div>
+                <div class="price-type">로켓와우회원가</div>
+                <div class="price-box">
+                  <div class="price">5,740</div>
+                  <div>원</div>
+                  <span class="sr-only">배송유형 로켓배송</span>
+                  <img
+                    class="rocket-delivery"
+                    src="/assets/icon/badge-rocket.svg"
+                    alt="로켓배송"
+                  />
+                </div>
+              </a>
             </div>
             <div class="product-card">
-              <img src="assets/category/houseware/houseware-dryingrack.jpg" />
-              <div class="name">모던홈 탱크건조대 2단 특대, 1개</div>
-              <div class="price">28,550 원</div>
+              <a href="/">
+                <img src="assets/category/houseware/houseware-dryingrack.jpg" />
+                <div class="name">모던홈 탱크건조대 2단 특대, 1개</div>
+                <div class="price-box">
+                  <span class="sr-only">일반 판매가</span>
+                  <div class="price">28,550</div>
+                  <div>원</div>
+                </div>
+              </a>
             </div>
             <div class="product-card">
-              <img src="assets/category/houseware/houseware-mask.jpg" />
-              <div class="name">
-                웹킵스 황사방역마스크 KF94, 초소형 1개입 25개
-              </div>
-              <div class="price">
-                16,900 원
-                <img
-                  class="rocket-delivery"
-                  src="/assets/icon/badge-rocket.svg"
-                  alt="배송유형 로켓배송"
-                />
-              </div>
+              <a href="/">
+                <img src="assets/category/houseware/houseware-mask.jpg" />
+                <div class="name">
+                  웹킵스 황사방역마스크 KF94, 초소형 1개입 25개
+                </div>
+                <div class="price-box">
+                  <div class="price">16,900</div>
+                  <div>원</div>
+                  <span class="sr-only">배송유형 로켓배송</span>
+                  <img
+                    class="rocket-delivery"
+                    src="/assets/icon/badge-rocket.svg"
+                    alt="로켓배송"
+                  />
+                </div>
+              </a>
             </div>
           </div>
         </div>
       </article>
       <article id="second">
-        <div class="article-tit">
+        <nav class="article-tit">
           <h2>주방용품</h2>
-          <h4>바로가기</h4>
+          <a href="/"><h4>바로가기</h4></a>
           <h3>HOT키워드</h3>
           <div class="group">
-            <a href="/"><div class="hashtag">#니트릴장갑</div></a>
-            <a href="/"><div class="hashtag">#시리얼디스펜서</div></a>
-            <a href="/"><div class="hashtag">#와플팬</div></a>
-            <a href="/"><div class="hashtag">#텀블러</div></a>
-            <a href="/"><div class="hashtag">#양념통</div></a>
-            <a href="/"><div class="hashtag">#수세미</div></a>
+            <div><a href="/">#니트릴장갑</a></div>
+            <div><a href="/">#시리얼디스펜서</a></div>
+            <div><a href="/">#와플팬</a></div>
+            <div><a href="/">#텀블러</a></div>
+            <div><a href="/">#양념통</a></div>
+            <div><a href="/">#수세미</a></div>
           </div>
-        </div>
-        <div class="article-slide">
-          <div class="slides">
-            <div id="slide-1">
-              <img src="/assets/slides/kitchenware-tumbler.jpg" />
-              <div class="banner">
-                <div class="tit">텀블러</div>
-                <div class="tit-sub">실용성에 디자인까지, 착한 텀블러</div>
+        </nav>
+        <aside>
+          <div
+            class="carousel"
+            role="region"
+            aria-roledescription="carousel"
+            aria-label="두개의 주방용품 배너"
+          >
+            <div class="carousel_indicator">
+              <button
+                type="button"
+                class="carousel__indicator active"
+                aria-label="첫번째 배너 보기"
+                aria-controls="kitchenBanner"
+              ></button>
+              <button
+                type="button"
+                class="carousel__indicator"
+                aria-label="두번째 배너 보기"
+                aria-controls="kitchenBanner"
+              ></button>
+            </div>
+            <div class="carousel_list" id="kitchenBanner" aria-live="off">
+              <div
+                class="carousel_list_item active"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="첫번째 배너"
+              >
+                <a href="/">
+                  <img
+                    src="/assets/slides/kitchenware-tumbler.jpg"
+                    alt="텀블러"
+                  />
+                  <div class="aside_text kitchen_aside_text">
+                    <p>텀블러</p>
+                    <p>실용성에 디자인까지, 착한 텀블러</p>
+                  </div>
+                </a>
               </div>
-              <div class="dots-wrapper">
-                <li><a class="dot" href="#slide-1"></a></li>
-                <li><a class="dot" href="#slide-2"></a></li>
+
+              <div
+                class="carousel_list_item"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="두번째 배너"
+              >
+                <a href="/">
+                  <img
+                    src="/assets/slides/kitchenware-lunchbox.jpg"
+                    alt="런치박스"
+                  />
+                  <div class="aside_text kitchen_aside_text">
+                    <p>런치박스</p>
+                    <p>실용성에 디자인까지, 착한 런치박스</p>
+                  </div>
+                </a>
               </div>
             </div>
-            <div id="slide-2">
-              <img src="/assets/slides/kitchenware-lunchbox.jpg" />
-            </div>
           </div>
-        </div>
+        </aside>
         <div class="article-list">
           <div class="top">
             <div class="product-card">
-              <img
-                src="assets/category/kitchenware/kitchenware-kitchentowel.jpg"
-              />
-              <div class="name">
-                코디 아름드리 Size Up 키친타올 250매, 12롤, 1팩
-              </div>
-              <div class="price-type">로켓와우회원가</div>
-              <div class="price">
-                14,300 원
+              <a href="/">
                 <img
-                  class="rocket-delivery"
-                  src="/assets/icon/badge-rocket.svg"
-                  alt="배송유형 로켓배송"
+                  src="assets/category/kitchenware/kitchenware-kitchentowel.jpg"
                 />
-              </div>
+                <div class="name">
+                  코디 아름드리 Size Up 키친타올 250매, 12롤, 1팩
+                </div>
+                <div class="price-type">로켓와우회원가</div>
+                <div class="price-box">
+                  <div class="price">14,300</div>
+                  <div>원</div>
+                  <span class="sr-only">배송유형 로켓배송</span>
+                  <img
+                    class="rocket-delivery"
+                    src="/assets/icon/badge-rocket.svg"
+                    alt="로켓배송"
+                  />
+                </div>
+              </a>
             </div>
             <div class="product-card">
-              <img src="assets/category/kitchenware/kitchenware-airfryer.jpg" />
-              <div class="name">
-                니코 에어프라이어 오븐겸용 5.2L, DWAF-5.5NK
-              </div>
-              <div class="price">
-                37,800 원
+              <a href="/">
                 <img
-                  class="rocket-delivery"
-                  src="/assets/icon/badge-rocket.svg"
-                  alt="배송유형 로켓배송"
+                  src="assets/category/kitchenware/kitchenware-airfryer.jpg"
                 />
-              </div>
+                <div class="name">
+                  니코 에어프라이어 오븐겸용 5.2L, DWAF-5.5NK
+                </div>
+                <div class="price-box">
+                  <div class="price">37,800</div>
+                  <div>원</div>
+                  <span class="sr-only">배송유형 로켓배송</span>
+                  <img
+                    class="rocket-delivery"
+                    src="/assets/icon/badge-rocket.svg"
+                    alt="로켓배송"
+                  />
+                </div>
+              </a>
             </div>
             <div class="product-card">
-              <img
-                src="assets/category/kitchenware/kitchenware-paperfoil.jpg"
-              />
-              <div class="name">착한식재료, 종이호일 30cm X 20m, 2개</div>
-              <div class="price-type">즉시할인가</div>
-              <div class="price">
-                11,400 원
+              <a href="/">
                 <img
-                  class="rocket-delivery"
-                  src="/assets/icon/badge-rocket.svg"
-                  alt="배송유형 로켓배송"
+                  src="assets/category/kitchenware/kitchenware-paperfoil.jpg"
                 />
-              </div>
+                <div class="name">착한식재료, 종이호일 30cm X 20m, 2개</div>
+                <div class="price-type">즉시할인가</div>
+                <div class="price-box">
+                  <div class="price">11,400</div>
+                  <div>원</div>
+                  <span class="sr-only">배송유형 로켓배송</span>
+                  <img
+                    class="rocket-delivery"
+                    src="/assets/icon/badge-rocket.svg"
+                    alt="로켓배송"
+                  />
+                </div>
+              </a>
             </div>
           </div>
           <div class="bottom">
             <div class="product-card">
-              <img
-                src="assets/category/kitchenware/kitchenware-zipperbag.jpg"
-              />
-              <div class="name">기본에 크린지퍼백 소형 100매, 5개</div>
-              <div class="price">
-                5,740 원
+              <a href="/">
                 <img
-                  class="rocket-delivery"
-                  src="/assets/icon/badge-rocket.svg"
-                  alt="배송유형 로켓배송"
+                  src="assets/category/kitchenware/kitchenware-zipperbag.jpg"
                 />
-              </div>
+                <div class="name">기본에 크린지퍼백 소형 100매, 5개</div>
+                <div class="price-box">
+                  <div class="price">5,740</div>
+                  <div>원</div>
+                  <span class="sr-only">배송유형 로켓배송</span>
+                  <img
+                    class="rocket-delivery"
+                    src="/assets/icon/badge-rocket.svg"
+                    alt="로켓배송"
+                  />
+                </div>
+              </a>
             </div>
             <div class="product-card">
-              <img
-                src="assets/category/kitchenware/kitchenware-paperspoon.jpg"
-              />
-              <div class="name">모던홈 탱크건조대 2단 특대, 1개</div>
-              <div class="price">4,850 원</div>
+              <a href="/">
+                <img
+                  src="assets/category/kitchenware/kitchenware-paperspoon.jpg"
+                />
+                <div class="name">모던홈 탱크건조대 2단 특대, 1개</div>
+                <div class="price-box">
+                  <span class="sr-only">일반 판매가</span>
+                  <div class="price">4,850</div>
+                  <div>원</div>
+                </div>
+              </a>
             </div>
             <div class="product-card">
-              <img
-                src="assets/category/kitchenware/kitchenware-illycoffee.jpg"
-              />
-              <div class="name">
-                일리 아라비카 셀렉션 브라질 캡슐커피, 120g 1개
-              </div>
-              <div class="price-type">로켓와우회원가</div>
-              <div class="price">
-                12,415 원
+              <a href="/">
                 <img
-                  class="rocket-delivery"
-                  src="/assets/icon/badge-rocket.svg"
-                  alt="배송유형 로켓배송"
+                  src="assets/category/kitchenware/kitchenware-illycoffee.jpg"
                 />
-              </div>
+                <div class="name">
+                  일리 아라비카 셀렉션 브라질 캡슐커피, 120g 1개
+                </div>
+                <div class="price-type">로켓와우회원가</div>
+                <div class="price-box">
+                  <div class="price">12,415</div>
+                  <div>원</div>
+                  <span class="sr-only">배송유형 로켓배송</span>
+                  <img
+                    class="rocket-delivery"
+                    src="/assets/icon/badge-rocket.svg"
+                    alt="로켓배송"
+                  />
+                </div>
+              </a>
             </div>
           </div>
         </div>
